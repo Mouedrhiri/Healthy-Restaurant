@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>Choices</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="/logo.png" alt="" />
+        <h1>Choisis Ton Objectif :</h1>
+      </nav>
+    </header>
+    <style>
+      header h1 {
+        color: black;
+      }
+      header nav {
+        background-color: white;
+      }
+      body {
+        background-image: none;
+        background-color: #2373a4;
+      }
+
+      .masse {
+        border: #6ad439 4px solid;
+        background-color: white;
+        width: 400px;
+        height: 200px;
+        border-radius: 20px;
+      }
+      .masse:hover {
+        box-shadow: 5px 5px 15px 5px #000000;
+      }
+      .lose2 {
+        background-color: white;
+        border: rgb(158, 158, 158) 4px solid;
+        width: 400px;
+        height: 200px;
+        margin-right: 30px;
+        border-radius: 20px;
+      }
+      .lose2 img {
+        padding-top: 40px;
+        width: 20%;
+      }
+      .lose {
+        border: #e62d2d 4px solid;
+        background-color: white;
+        width: 400px;
+        height: 200px;
+        margin-right: 30px;
+        border-radius: 20px;
+        font-size: 15px;
+      }
+      .lose:hover {
+        box-shadow: 5px 5px 15px 5px #000000;
+      }
+      .masse img {
+        padding-top: 40px;
+        width: 20%;
+      }
+      .lose img {
+        padding-top: 40px;
+        width: 20%;
+      }
+      .masse2 {
+        background-color: white;
+        border: rgb(158, 158, 158) 4px solid;
+        width: 400px;
+        height: 200px;
+        border-radius: 20px;
+      }
+      .masse2 img {
+        padding-top: 40px;
+        width: 20%;
+      }
+      .flx {
+        text-align: center;
+        display: flex;
+        flex-direction: row;
+        margin-left: 25%;
+        margin-top: 15%;
+      }
+    </style>
+    <div class="flx">
+      <div id="lose" class="lose" onclick="b()" ondblclick="blr1()">
+        <img src="https://www.pngrepo.com/download/13895/weight.png" />
+        <h1>Perdre Le Poids</h1>
+      </div>
+      <div id="masse" class="masse" onclick="rose()" ondblclick="blr2()">
+        <img
+          src="https://www.pngrepo.com/png/98974/512/strong-man-silhouette-with-weight.png"
+          alt=""
+        />
+        <h1>Masser</h1>
+      </div>
+    </div>
+    <div id="bt"></div>
+    <script src="/script.js"></script>
+  </body>
+</html>

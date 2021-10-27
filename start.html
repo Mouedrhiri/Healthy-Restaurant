@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
+    <title>HealthyResatu</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img src="/logo.png" alt="" />
+        <h1>Choisis ton Sex :</h1>
+      </nav>
+    </header>
+    <div class="flx">
+      <div id="male" class="male" onclick="b()" ondblclick="blr1()">
+        <img src="/img/male.png" />
+        <h1>Homme</h1>
+      </div>
+      <div id="female" class="fem" onclick="rose()" ondblclick="blr2()">
+        <img src="/img/female.png" alt="" />
+        <h1>Femme</h1>
+      </div>
+    </div>
+    <div id="bt"></div>
+    <script>
+      function b() {
+        document.getElementById("male").setAttribute("class", "male2");
+        document.getElementById("female").setAttribute("class", "fem");
+        var div = document.getElementById("bt");
+        div.innerHTML =
+          '<button id="btn"><a href="/choicem.html">Continue</a></button>';
+      }
+      function rose() {
+        document.getElementById("female").setAttribute("class", "fem2");
+        document.getElementById("male").setAttribute("class", "male");
+        var div = document.getElementById("bt");
+        div.innerHTML =
+          '<button id="btn"><a href="/choicef.html">Continue</a></button>';
+      }
+      function blr1() {
+        document.getElementById("male").setAttribute("class", "male");
+        var div = document.getElementById("bt");
+        div.innerHTML = "";
+      }
+      function blr2() {
+        document.getElementById("female").setAttribute("class", "fem");
+        var div = document.getElementById("bt");
+        div.innerHTML = "";
+      }
+    </script>
+    <style>
+      #btn {
+        margin-left: 30px;
+        font-size: 20px;
+        margin-top: 40px;
+        background-color: rgb(2, 134, 134);
+        color: white;
+        padding-top: 30px;
+        padding-bottom: 30px;
+        width: 170px;
+        text-align: center;
+        border: none;
+        border-radius: 30px;
+      }
+      #btn a {
+        text-decoration: none;
+        color: white;
+      }
+    </style>
+  </body>
+</html>
